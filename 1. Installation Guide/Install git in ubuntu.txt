@@ -1,0 +1,6 @@
+1. Use the following command to add git latest version repository.
+	sudo add-apt-repository ppa:git-core/ppa 
+2. After adding the repository update the system using apt and install git using the following command.
+	sudo apt-get update && sudo apt-get -y install git 
+3. Check the version of git if the installatio is successful.
+	git --version

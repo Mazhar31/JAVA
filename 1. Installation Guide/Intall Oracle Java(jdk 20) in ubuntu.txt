@@ -1,0 +1,29 @@
+1. Download Java package from the official website. Download the .deb file for ubuntu.
+2. Install the .deb package using the following command.
+	sudo apt install ~/Downloads/jdk-20_linux-64_bin.deb
+Replace the ~/Downloads with the path where you download the package and write package name you got.
+3. If you have multiple JDK installed and you want to set JDK 20 as default then use the following commands. JDK installs the files into /usr/lib/jvm/jdk-20/
+	sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-20/bin/java 1
+	sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-20/bin/javac 1
+	sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk-20/bin/jar 1
+
+4. Set JAVA_HOME 
+	create and config file:
+		sudo gedit /etc/profile.d/jdk.sh
+	then add the following lines and save it.
+		export J2SDKDIR=/usr/lib/jvm/jdk-20
+		export J2REDIR=/usr/lib/jvm/jdk-20
+		export PATH=$PATH:/usr/lib/jvm/jdk-20/bin:/usr/lib/jvm/jdk-20/db/bin
+		export JAVA_HOME=/usr/lib/jvm/jdk-20
+		export DERBY_HOME=/usr/lib/jvm/jdk-20/db
+	And create another one for C shell:
+		sudo gedit /etc/profile.d/jdk.csh
+	add the following line and save it.
+		setenv J2SDKDIR /usr/lib/jvm/jdk-20
+		setenv J2REDIR /usr/lib/jvm/jdk-20
+		setenv PATH ${PATH}:/usr/lib/jvm/jdk-19/bin:/usr/lib/jvm/jdk-20/db/bin
+		setenv JAVA_HOME /usr/lib/jvm/jdk-20
+		setenv DERBY_HOME /usr/lib/jvm/jdk-20/db
+		
+5. Change the permissions for the above 2 files:
+	sudo chmod +x /etc/profile.d/jdk.csh /etc/profile.d/jdk.sh
