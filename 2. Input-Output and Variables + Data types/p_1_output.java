@@ -1,4 +1,4 @@
-public class One_output {
+public class p_1_output {
     public static void main(String[] args) {
         // Output
         System.out.println("Hello World!");

@@ -1,4 +1,4 @@
-public class Three_variables_in_Java {
+public class p_3_variables_in_Java {
     public static void main(String[] args) {
         // Variables
         String name = "Mazhar Shafiq";
@@ -9,7 +9,7 @@ public class Three_variables_in_Java {
         // We can change variables values
         name = "Muhammad Mazhar Shafiq";
         a = 30;
-        System.out.println(name);
+        System.out.println(name+" "+age);
         System.out.println(a + " " + b);
 
     }

@@ -1,4 +1,4 @@
-public class Two_output_exercise {
+public class p_2_output_exercise {
     public static void main(String[] args) {
         /*
          * Qs. Print the following pattern:

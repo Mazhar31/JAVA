@@ -2,7 +2,7 @@
 // You have to import scanner class to take inputs
 import java.util.Scanner;
 
-public class Six_Inputs_in_java {
+public class p_6_Inputs_in_java {
     public static void main(String[] args) {
         // Input
         Scanner sc = new Scanner(System.in);

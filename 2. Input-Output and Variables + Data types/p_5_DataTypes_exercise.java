@@ -1,4 +1,4 @@
-public class Five_DataTypes_exercise {
+public class p_5_DataTypes_exercise {
     public static void main(String[] args) {
         /*
          * Calculate (axb) / (a-b)

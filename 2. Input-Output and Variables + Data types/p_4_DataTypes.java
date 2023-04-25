@@ -1,4 +1,4 @@
-public class Four_DataTypes {
+public class p_4_DataTypes {
     public static void main(String[] args) {
         // text written before variables are calles DataTypes like (String, int, double,
         // float etc..)
@@ -18,7 +18,7 @@ public class Four_DataTypes {
         // We can change variables values
         name = "Muhammad Mazhar Shafiq";
         a = 30;
-        System.out.println(name);
+        System.out.println(name+" "+age);
         System.out.println(a + " " + b);
 
         int sum = a + b;
