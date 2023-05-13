@@ -10,8 +10,9 @@ public class p_1_bubbleSort {
     public static void main(String[] args) {
         int[] arr = { 6, 3, 7, 8, 1 };
 
+        // time complexity = O(n^2)
         // Bubble Sort
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length - 1; i++) { // n-1
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // swap
